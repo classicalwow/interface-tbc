@@ -1,0 +1,8 @@
+## Interface: 20400
+## Title: TellMeWhen
+## Version: 1.0
+## Author: Nephthys <Drunken Monkeys> of Hyjal
+## Notes: Notifications about cooldowns, buffs, etc. 
+## SavedVariablesPerCharacter: TellMeWhen_Settings
+TellMeWhen.xml
+

@@ -1,0 +1,17 @@
+## Interface: 20400
+
+## Title: oRA2 [|cffeda55fParticipant|r]
+## Notes: oRA2 Participant modules
+## Author: Ammo, Haste & Others
+## Version: 2.0
+## LoadOnDemand: 1
+
+## X-oRA-LoadWithCore: 1
+
+## Dependencies: oRA2
+
+Participant.lua
+Ready.lua
+RaidWarn.lua
+MainTank.lua
+Item.lua

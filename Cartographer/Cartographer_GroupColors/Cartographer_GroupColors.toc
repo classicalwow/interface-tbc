@@ -1,0 +1,21 @@
+﻿## Interface: 20400
+## Title: Cartographer |r[|cffeda55fGroup Colors|r]
+## X-Name: Group Colors
+## X-Name-zhTW: 小隊顏色
+## X-Name-zhCN: 小队颜色
+## X-ModuleName: GroupColors
+## Notes: Module which turns all your party's and your raid's POIs into circles colored based on class, and shows a number on them based on their raid group.
+## Notes-zhTW: 在地圖上將隊伍和團隊隊友圓點依職業著色，並顯示號碼表示他們所在小隊的模組。
+## Notes-zhCN: 在地图上将队伍或团队成员根据职业着色, 并显示所在小队队号数字。
+## Author: ckknight
+## DefaultState: enabled
+## LoadOnDemand: 1
+## Dependencies: Cartographer
+## OptionalDeps:
+## X-Category: Map
+## X-eMail: ckknight@gmail.com
+## X-Website: http://ckknight.wowinterface.com/
+## X-License: GPL v2 or later
+## Version: 2.0
+
+GroupColors.lua

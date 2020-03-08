@@ -1,0 +1,237 @@
+------------------------------------------------------------------------
+r238 | parnic | 2008-10-14 01:46:29 +0000 (Tue, 14 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/modules/MirrorBar.lua
+
+- fixed a bug causing the mirror bar to not obey "offset" setting
+- made the mirror bar's text stop bouncing up and down based on its offset setting. now will always remain in the same place (since there are vertical/horizontal adjustment sliders for this text already)
+------------------------------------------------------------------------
+r236 | parnic | 2008-10-09 15:41:01 +0000 (Thu, 09 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/IceHUD.toc
+   M /trunk/modules/Threat.lua
+
+v.1.3.2 - bumped toc version of icehud to 1.3.2 in preparation of the next repo tag
+- made aggro alpha setting on the threat bar actually work
+------------------------------------------------------------------------
+r235 | parnic | 2008-10-09 15:20:13 +0000 (Thu, 09 Oct 2008) | 1 line
+Changed paths:
+   M /trunk/textures/GlowArc.blp
+   M /trunk/textures/GlowArcBG.blp
+
+- replaced the glow arc textures with a new version supplied by the author
+------------------------------------------------------------------------
+r234 | parnic | 2008-10-09 15:14:39 +0000 (Thu, 09 Oct 2008) | 3 lines
+Changed paths:
+   M /trunk/IceCore.lua
+   M /trunk/IceHUD.lua
+
+- changed a couple of defaults on the new bar texture presets for additive versus blended draws
+- widened the maximum gap once again to 700 by request (from 500)
+- hoping the curse packager works this morning ;)
+------------------------------------------------------------------------
+r233 | parnic | 2008-10-09 05:21:32 +0000 (Thu, 09 Oct 2008) | 1 line
+Changed paths:
+   M /trunk/IceBarElement.lua
+
+- fixed a bug from the last check-in with pre-wotlk clients (GetCVarBool doesn't exist?!)
+------------------------------------------------------------------------
+r232 | parnic | 2008-10-09 05:13:37 +0000 (Thu, 09 Oct 2008) | 1 line
+Changed paths:
+   M /trunk/IceBarElement.lua
+
+- fixed a bug that caused mana frames to stop updating properly in wotlk under certain conditions
+------------------------------------------------------------------------
+r231 | parnic | 2008-10-09 01:40:56 +0000 (Thu, 09 Oct 2008) | 1 line
+Changed paths:
+   M /trunk/IceCore.lua
+   M /trunk/IceHUD.lua
+   M /trunk/modules/ComboPoints.lua
+   M /trunk/modules/LacerateCount.lua
+   M /trunk/modules/SunderCount.lua
+   A /trunk/textures/BloodGlaives.blp
+   A /trunk/textures/BloodGlaivesBG.blp
+   A /trunk/textures/CleanCurves.blp
+   A /trunk/textures/CleanCurvesBG.blp
+   A /trunk/textures/ComboCleanCurves.blp
+   A /trunk/textures/ComboCleanCurvesBG.blp
+   A /trunk/textures/ComboGlow.blp
+   A /trunk/textures/ComboGlowBG.blp
+   A /trunk/textures/GlowArc.blp
+   A /trunk/textures/GlowArcBG.blp
+
+- added 3 new user-submitted bar textures (GlowArc, CleanCurves, and BloodGlaives) and 2 new user-submitted combo/sunder/lacerate count textures (Glow and CleanCurves)
+------------------------------------------------------------------------
+r230 | parnic | 2008-10-06 18:34:35 +0000 (Mon, 06 Oct 2008) | 1 line
+Changed paths:
+   M /trunk/IceBarElement.lua
+   M /trunk/IceCore.lua
+   M /trunk/IceHUD.lua
+
+- added bar/background graphical blend mode options so we can have us some snazzier artses
+------------------------------------------------------------------------
+r228 | parnic | 2008-10-04 17:15:34 +0000 (Sat, 04 Oct 2008) | 1 line
+Changed paths:
+   M /trunk/modules/CastBar.lua
+
+- made lag indicator on the player's cast bar respect the bar width setting
+------------------------------------------------------------------------
+r227 | parnic | 2008-10-04 17:10:35 +0000 (Sat, 04 Oct 2008) | 1 line
+Changed paths:
+   M /trunk/IceCastBar.lua
+
+- made castbar text respect alpha settings
+------------------------------------------------------------------------
+r226 | parnic | 2008-10-02 21:13:18 +0000 (Thu, 02 Oct 2008) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/libs
+
+- updated lib references to their new names
+------------------------------------------------------------------------
+r224 | parnic | 2008-09-30 07:05:36 +0000 (Tue, 30 Sep 2008) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+
+v1.3 - setup some opt-deps as a test
+------------------------------------------------------------------------
+r223 | parnic | 2008-09-30 06:52:34 +0000 (Tue, 30 Sep 2008) | 3 lines
+Changed paths:
+   M /trunk
+   M /trunk/.pkgmeta
+   M /trunk/IceHUD.lua
+   M /trunk/embeds.xml
+   M /trunk/libs
+   M /trunk/modules/Runes.lua
+
+- increase maximum gap setting by request
+- added horizontal positioning option to the Runes module (and made sure it was properly centered by default instead of being off to the left)
+- changed log template on main dir, moved callbackhandler to the top of the list for embeds, externals, and pkgmeta just to keep everything uniform and make Threat load properly
+------------------------------------------------------------------------
+r222 | parnic | 2008-09-30 06:28:03 +0000 (Tue, 30 Sep 2008) | 1 line
+Changed paths:
+   M /trunk/libs
+
+- fixing up libs svn:externals directive to pull the proper libstub
+------------------------------------------------------------------------
+r221 | parnic | 2008-09-30 06:21:43 +0000 (Tue, 30 Sep 2008) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+
+- changed pkgmeta from lib-stub to the correct libstub (and set to the 1.0 tag)
+------------------------------------------------------------------------
+r219 | parnic | 2008-09-30 05:56:27 +0000 (Tue, 30 Sep 2008) | 2 lines
+Changed paths:
+   M /trunk/.pkgmeta
+
+IceHUD:
+- attempt the first at making the packager behave ;)
+------------------------------------------------------------------------
+r218 | parnic | 2008-09-30 05:43:09 +0000 (Tue, 30 Sep 2008) | 3 lines
+Changed paths:
+   M /trunk/IceHUD.lua
+   M /trunk/IceHUD.toc
+   M /trunk/embeds.xml
+   M /trunk/libs
+
+IceHUD:
+- general cleanup: removed acedebug stuff, re-ordered a few things to load cleaner, changed mod category from unitframes to huds, etc.
+- fixed threat-2.0 by embedding required libs for it (ace3 stuff)
+------------------------------------------------------------------------
+r217 | root | 2008-09-29 21:59:36 +0000 (Mon, 29 Sep 2008) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+   M /trunk/libs
+
+Facilitate WowAce-on-CurseForge transition
+------------------------------------------------------------------------
+r215 | root | 2008-09-29 20:58:12 +0000 (Mon, 29 Sep 2008) | 1 line
+Changed paths:
+   D /tmp/trunk/IceHUD
+   A /trunk (from /tmp/trunk/IceHUD:214)
+
+Importing old repo data under /trunk
+------------------------------------------------------------------------
+r214 | parnic | 2008-09-28 20:14:22 +0000 (Sun, 28 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/IceHUD/IceHUD.toc
+   M /tmp/trunk/IceHUD/embeds.xml
+   M /tmp/trunk/IceHUD/libs
+   A /tmp/trunk/IceHUD/modules/RangeCheck.lua
+
+IceHUD:
+- added simplistic RangeCheck module
+------------------------------------------------------------------------
+r213 | parnic | 2008-09-28 04:43:06 +0000 (Sun, 28 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/IceHUD/IceHUD.toc
+   M /tmp/trunk/IceHUD/embeds.xml
+   M /tmp/trunk/IceHUD/libs
+   A /tmp/trunk/IceHUD/modules/Threat.lua
+
+IceHUD:
+- added Threat module (since the standalone one on WoWI has been abandoned. this is simply the code for that addon + fixes from acapela for Threat-1.0 to Threat-2.0); disabled by default
+------------------------------------------------------------------------
+r212 | parnic | 2008-09-28 04:05:03 +0000 (Sun, 28 Sep 2008) | 3 lines
+Changed paths:
+   M /tmp/trunk/IceHUD/IceHUD.toc
+   M /tmp/trunk/IceHUD/modules/TargetHealth.lua
+   M /tmp/trunk/IceHUD/modules/TargetMana.lua
+   A /tmp/trunk/IceHUD/modules/TargetOfTargetHealth.lua
+   A /tmp/trunk/IceHUD/modules/TargetOfTargetMana.lua
+
+IceHUD:
+- made TargetHealth and TargetMana extensible so that new unit bars can be made from them easily
+- added TargetTargetHealth and TargetTargetMana (idea and some code borrowed from Dark Imakuni at http://www.wowinterface.com/downloads/info10699-IceHUD-TargetofTarget.html )
+------------------------------------------------------------------------
+r211 | parnic | 2008-09-27 16:36:54 +0000 (Sat, 27 Sep 2008) | 4 lines
+Changed paths:
+   M /tmp/trunk/IceHUD/modules/ComboPoints.lua
+   M /tmp/trunk/IceHUD/modules/LacerateCount.lua
+   M /tmp/trunk/IceHUD/modules/SliceAndDice.lua
+   M /tmp/trunk/IceHUD/modules/SunderCount.lua
+   A /tmp/trunk/IceHUD/textures/ComboRound.blp
+   A /tmp/trunk/IceHUD/textures/ComboRoundBG.blp
+
+IceHUD:
+- added support for new combo point, sunder/lacerate count textures
+- added a new round combo point texture (user-submitted)
+- fixed a bug in the slice and dice module that caused it to stay visible for much longer than it should have under certain circumstances
+------------------------------------------------------------------------
+r210 | parnic | 2008-09-27 05:20:59 +0000 (Sat, 27 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/IceHUD/modules/TargetOfTarget.lua
+
+IceHUD:
+- fixed TargetOfTarget module's error message as of wotlk beta 8962
+------------------------------------------------------------------------
+r209 | parnic | 2008-09-26 18:17:20 +0000 (Fri, 26 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/IceHUD/IceCore.lua
+   M /tmp/trunk/IceHUD/IceHUD.lua
+   A /tmp/trunk/IceHUD/textures/ColorBar.blp
+   A /tmp/trunk/IceHUD/textures/ColorBarBG.blp
+   A /tmp/trunk/IceHUD/textures/RivetBar.blp
+   A /tmp/trunk/IceHUD/textures/RivetBar2.blp
+   A /tmp/trunk/IceHUD/textures/RivetBar2BG.blp
+   A /tmp/trunk/IceHUD/textures/RivetBarBG.blp
+
+IceHUD:
+- added 3 new user-submitted bar presets/skins (thanks KcuhC!)
+------------------------------------------------------------------------
+r208 | parnic | 2008-09-26 18:08:56 +0000 (Fri, 26 Sep 2008) | 3 lines
+Changed paths:
+   M /tmp/trunk/IceHUD/modules/PlayerHealth.lua
+   M /tmp/trunk/IceHUD/modules/TargetOfTarget.lua
+
+IceHUD:
+- added horizontal positioning option to the ToT module by request
+- added an option to disable click-targeting while in combat by request
+------------------------------------------------------------------------
+r207 | parnic | 2008-08-26 05:55:45 +0000 (Tue, 26 Aug 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/IceHUD/modules/TargetInfo.lua
+
+IceHUD:
+- re-fixed cascading buffs when "buffs per row" was used for the TargetInfo module
+------------------------------------------------------------------------

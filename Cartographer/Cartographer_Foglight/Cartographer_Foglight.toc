@@ -1,0 +1,21 @@
+﻿## Interface: 20400
+## Title: Cartographer |r[|cffeda55fFoglight|r]
+## X-Name: Foglight
+## X-Name-zhTW: 迷霧
+## X-Name-zhCN: 迷雾
+## X-ModuleName: Foglight
+## Notes: Module to show unexplored areas on the map.
+## Notes-zhTW: 顯示地圖尚未探索地區的模組。
+## Notes-zhCN: 显示地图尚未探索地区模块。
+## Author: ckknight
+## DefaultState: enabled
+## LoadOnDemand: 1
+## Dependencies: Cartographer
+## OptionalDeps: 
+## X-Category: Map
+## X-eMail: ckknight@gmail.com
+## X-Website: http://ckknight.wowinterface.com/
+## X-License: GPL v2 or later
+## Version: 2.0
+
+Foglight.lua

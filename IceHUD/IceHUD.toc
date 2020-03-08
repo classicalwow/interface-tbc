@@ -1,0 +1,54 @@
+## Interface: 20400
+## Author: Iceroth, continued by Parnic
+## Name: IceHUD
+## Title: IceHUD |cff7fff7f -Ace2-|r
+## Notes: Another HUD addon
+## Version: 1.3.2 ($Revision: 236 $)
+## SavedVariables: IceCoreDB
+## OptionalDeps: Ace2, Ace3, LibSharedMedia-3.0, Waterfall-1.0, Deformat, LibDogTag-3.0, LibDogTag-Unit-3.0, LibDruidMana-1.0, LibRangeCheck-2.0, Threat-2.0
+## X-Category: HUDs
+## X-Website: http://www.wowace.com/projects/wowace-ice-hud/
+
+# Libraries
+embeds.xml
+
+# IceHUD core functionality
+IceCore.lua
+IceHUD.lua
+IceElement.lua
+IceBarElement.lua
+IceUnitBar.lua
+IceCastBar.lua
+
+
+# IceHUD modules
+# - Feel free to comment these out if you like
+modules\PlayerHealth.lua
+modules\PlayerMana.lua
+modules\TargetHealth.lua
+modules\TargetMana.lua
+modules\PetHealth.lua
+modules\PetMana.lua
+modules\DruidMana.lua
+modules\TargetInfo.lua
+modules\TargetOfTarget.lua
+modules\ComboPoints.lua
+modules\CastBar.lua
+modules\TargetCast.lua
+modules\MirrorBar.lua
+modules\SunderCount.lua
+modules\GlobalCoolDown.lua
+modules\SliceAndDice.lua
+modules\TargetCC.lua
+# - make sure FocusCC loads after TargetCC since it inherits
+modules\FocusCC.lua
+modules\FocusHealth.lua
+modules\FocusMana.lua
+modules\FocusCast.lua
+modules\LacerateCount.lua
+modules\Runes.lua
+# - make sure TargetOfTarget health/mana load after TargetHealth/TargetMana since they inherit
+modules\TargetOfTargetHealth.lua
+modules\TargetOfTargetMana.lua
+modules\Threat.lua
+modules\RangeCheck.lua

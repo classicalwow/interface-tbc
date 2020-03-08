@@ -1,0 +1,24 @@
+﻿## Interface: 20400
+## Title: oRA2 |cff7fff7f -Ace2-|r
+## Notes: A CT_RaidAssist alternative
+## Title-zhCN: |CFF80FF80团队|R 团队助手
+## Notes-zhCN: 新型团队助手，Costa <CWDG>汉化 |N|CFF0099FF需要基础函数库|R
+## Title-zhTW: |CFF80FF80團隊|R 團隊助手
+## Notes-zhTW: 新型團隊助手，Costa <CWDG>漢化 |N|CFF0099FF需要基礎函式庫|R
+## X-Repple: 团队
+## DefaultState: Disabled
+## Version: 2.0.$Revision: 70972 $
+## Author: Ammo, Rabbit
+## OptionalDeps: Ace2, FuBar, SharedMedia, LibSharedMedia-3.0
+## X-Embeds: Ace2, TabletLib, FuBarPlugin-2.0, DewdropLib, CandyBar, LibSharedMedia-3.0, Waterfall-1.0, WindowLib
+## X-Category: Raid
+## SavedVariables: oRADB, oRAFubarDB
+
+embeds.xml
+
+LoadOnDemand.lua
+Core.lua
+Options.lua
+
+modules.xml
+
