@@ -812,7 +812,8 @@ function WeakAuras.ConstructOptions(prototype, data, startorder, subPrefix, subS
             if(arg.type == "aura") then
               fixedInput = WeakAuras.CorrectAuraName(v);
             elseif(arg.type == "spell") then
-              fixedInput = WeakAuras.CorrectSpellName(v);
+              -- fixedInput = WeakAuras.CorrectSpellName(v);
+              fixedInput = v
             elseif(arg.type == "item") then
               fixedInput = WeakAuras.CorrectItemName(v);
             end

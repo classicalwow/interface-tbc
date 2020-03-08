@@ -160,16 +160,12 @@ local function createThumbnail(parent, fullCreate)
     
     return borderframe;
 end
-local function print(text)
-	DEFAULT_CHAT_FRAME:AddMessage(text)
-end
 local function modifyThumbnail(parent, borderframe, data, fullModify, size)
     local mask, content, text = borderframe.mask, borderframe.content, borderframe.text;
     
     size = size or 28;
     
     local fontPath = SharedMedia:Fetch("font", data.font) or data.font;
-    print(fontPath);
     text:SetFont(fontPath, data.fontSize <= 25 and data.fontSize or 25, data.outline and "OUTLINE" or nil);
     text:SetTextHeight(data.fontSize);
     text:SetText(data.displayText);

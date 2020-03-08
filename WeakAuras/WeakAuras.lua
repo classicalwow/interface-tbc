@@ -861,6 +861,7 @@ do
   end
   
   for id, _ in pairs(spells) do
+    id = id:gsub("'","")
     local startTime, duration = GetSpellCooldown(id);
     startTime = startTime or 0;
     duration = duration or 0;
