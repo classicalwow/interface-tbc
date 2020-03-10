@@ -33,6 +33,20 @@ customCoolDown[21553] = 5.8;
 --   return res;
 -- end
 
+function dump(o)
+  if type(o) == 'table' then
+     local s = '{ '
+     for k,v in pairs(o) do
+        if type(k) ~= 'number' then k = '"'..k..'"' end
+        s = s .. '['..k..'] = ' .. dump(v) .. ','
+     end
+     return s .. '} '
+  else
+     return tostring(o)
+  end
+end
+
+
 function print (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19, arg20)
   if (arg1 or arg2 or arg3 or arg4 or arg5 or arg6 or arg7 or arg8 or arg9 or arg10 or arg11 or arg12 or arg13 or arg14 or arg15 or arg16 or arg17 or arg18 or arg19 or arg20) then DEFAULT_CHAT_FRAME:AddMessage(tostring(arg1)) end
   if (arg2 or arg3 or arg4 or arg5 or arg6 or arg7 or arg8 or arg9 or arg10 or arg11 or arg12 or arg13 or arg14 or arg15 or arg16 or arg17 or arg18 or arg19 or arg20) then DEFAULT_CHAT_FRAME:AddMessage(tostring(arg2)) end

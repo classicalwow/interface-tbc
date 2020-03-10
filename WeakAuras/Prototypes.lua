@@ -1861,7 +1861,7 @@ WeakAuras.event_prototypes = {
       WeakAuras.WatchSpellCooldown(spellName);
       local ret = [[
     local spell = %s;
-    local spellName = GetSpellInfo(spell);
+    local spellName = GetSpellInfo(spell) or '';
     local startTime, duration = GetSpellCooldown(spell);
     startTime = startTime or 0;
     duration = duration or 0;
